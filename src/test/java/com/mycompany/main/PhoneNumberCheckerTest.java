@@ -65,6 +65,11 @@ public class PhoneNumberCheckerTest {
     }
     
     @Test
+    public void testTooLong() {
+        assertFalse(PhoneNumberChecker.isNumberValid("+271234567890")); // 10 digits after +27
+    }
+    
+    @Test
     public void testIsNumberValid() {
         System.out.println("isNumberValid");
         String cellPhone = "";
