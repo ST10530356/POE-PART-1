@@ -48,6 +48,11 @@ public class PhoneNumberCheckerTest {
     }
     
     @Test
+    public void testMissingPlus() {
+        assertFalse(PhoneNumberChecker.isNumberValid("27123456789"));
+    }
+    
+    @Test
     public void testIsNumberValid() {
         System.out.println("isNumberValid");
         String cellPhone = "";
