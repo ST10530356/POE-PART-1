@@ -59,6 +59,12 @@ public class PhoneNumberCheckerTest {
     }
     
     @Test
+    public void testTooShort() {
+        assertFalse(PhoneNumberChecker.isNumberValid("+2712345678"));   
+        assertFalse(PhoneNumberChecker.isNumberValid("+27"));           
+    }
+    
+    @Test
     public void testIsNumberValid() {
         System.out.println("isNumberValid");
         String cellPhone = "";
