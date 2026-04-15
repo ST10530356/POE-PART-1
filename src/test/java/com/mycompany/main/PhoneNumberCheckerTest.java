@@ -39,6 +39,14 @@ public class PhoneNumberCheckerTest {
     /**
      * Test of isNumberValid method, of class PhoneNumberChecker.
      */
+    
+    @Test
+    public void testValidSouthAfricanNumber() {
+        assertTrue(PhoneNumberChecker.isNumberValid("+27123456789"));
+        assertTrue(PhoneNumberChecker.isNumberValid("+27821234567"));
+        assertTrue(PhoneNumberChecker.isNumberValid("+27000000000"));
+    }
+    
     @Test
     public void testIsNumberValid() {
         System.out.println("isNumberValid");
