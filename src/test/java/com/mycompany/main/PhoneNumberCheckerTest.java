@@ -66,7 +66,7 @@ public class PhoneNumberCheckerTest {
     
     @Test
     public void testTooLong() {
-        assertFalse(PhoneNumberChecker.isNumberValid("+271234567890")); // 10 digits after +27
+        assertFalse(PhoneNumberChecker.isNumberValid("+271234567890"));
     }
     
     @Test
