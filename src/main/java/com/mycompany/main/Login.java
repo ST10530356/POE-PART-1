@@ -46,12 +46,9 @@ public class Login{
         return username.contains("_") && username.length() <= 5;
     }
 
-    boolean hasUpper = false;
-    boolean hasDigit = false;
-    boolean hasSpecial = false;
-
     //Checks if all conditions are met for passwords
     public Boolean checkPasswordComplexity(String password){
+        boolean hasUpper = false; boolean hasDigit = false; boolean hasSpecial = false;
         if(password.length() < 8) return false;
         for(char c : password.toCharArray()){
             if(Character.isUpperCase(c)) hasUpper = true;
