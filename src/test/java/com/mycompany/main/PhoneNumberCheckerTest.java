@@ -53,6 +53,12 @@ public class PhoneNumberCheckerTest {
     }
     
     @Test
+    public void testWrongCountryCode() {
+        assertFalse(PhoneNumberChecker.isNumberValid("+44123456789"));
+        assertFalse(PhoneNumberChecker.isNumberValid("+1234567890"));
+    }
+    
+    @Test
     public void testIsNumberValid() {
         System.out.println("isNumberValid");
         String cellPhone = "";
