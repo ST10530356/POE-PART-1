@@ -70,6 +70,13 @@ public class PhoneNumberCheckerTest {
     }
     
     @Test
+    public void testContainsLettersOrSymbols() {
+        assertFalse(PhoneNumberChecker.isNumberValid("+27abc123456"));
+        assertFalse(PhoneNumberChecker.isNumberValid("+27 123 456 789")); 
+        assertFalse(PhoneNumberChecker.isNumberValid("+27-123456789"));   
+    }
+    
+    @Test
     public void testIsNumberValid() {
         System.out.println("isNumberValid");
         String cellPhone = "";
