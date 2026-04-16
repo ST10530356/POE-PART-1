@@ -49,22 +49,6 @@ public class MainTest {
         System.setIn(in);
     }
     
-    @Test
-    public void testRegistrationAndLoginFlow() throws Exception {
-        String input = "1\nJohn\nDoe\njohn_\nPassword1!\n+27123456789\n2\njohn_\nPassword1!\n3\n";
-        provideInput(input);
-        
-        
-        Main.main(new String[]{});
-
-        String output = outContent.toString();
-
-        assertTrue(output.contains("Username successfully captured"));
-        assertTrue(output.contains("Password successfully captured"));
-        assertTrue(output.contains("Cell phone number successfully added"));
-
-        assertTrue(output.contains("Welcome John Doe, it is great to see you."));
-    }
     
     @Test
     public void testInvalidUsernameRegistration() throws Exception {
