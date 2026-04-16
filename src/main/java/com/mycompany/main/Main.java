@@ -32,7 +32,7 @@ public class Main {
                 case "2" -> loginUser();
                 case "3" -> {
                     System.out.println("Menu has closed. Goodbye");
-                    break;
+                    return;
                 }
                 default -> System.out.println("Invalid choice, please input choices given(1, 2, or 3)");
             }
