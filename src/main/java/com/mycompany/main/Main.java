@@ -12,11 +12,12 @@ package com.mycompany.main;
 import java.util.Scanner;
 
 public class Main {
-    private static final Scanner scanner = new Scanner(System.in);
+    private static Scanner scanner = new Scanner(System.in);
     private static final Login login = new Login();
 
     public static void main(String[] args){
 
+        scanner = new Scanner(System.in);
         String choice;
 
        //Displays main menu and handles choices made by user
